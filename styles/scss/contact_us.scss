@@ -1,0 +1,129 @@
+.contact_us {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    align-items: center;
+    background: #213b7f;
+    padding: 1rem;
+    padding-bottom: 4.5rem;
+}
+
+.lower_form_group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    align-items: center;
+    background: #213b7f;
+    padding: 1rem;
+    padding-bottom: 4.5rem;
+
+    @media (min-width: 925px) {
+        justify-content: center;
+        column-gap: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        > div {
+            width: 20%;
+        }
+        > button {
+            width: 20%;
+        }
+    }
+}
+
+#hear_more_form {
+    width: fit-content;
+    height: fit-content;
+    margin-top: calc(5rem + 10px);
+    .contact_us {
+        display: none;
+        @media (min-width: 925px) {
+            display: flex;
+            width: 335px;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.contact_us__header {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+#contact_us_form {
+    .contact_us {
+        width: 100%;
+    }
+    .input_container {
+        width: 100%;
+        @media (min-width: 925px) {
+            max-width: 210px;
+            min-width: 210px;
+            width: 22%;
+        }
+    }
+}
+
+.input_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: white;
+    width: 90%;
+    height: 4rem;
+    & > :first-child {
+        width: 5rem;
+        margin: 1rem;
+        margin-left: 0;
+        margin-right: 0.33rem;
+        white-space: nowrap;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+}
+
+.input_text {
+    width: 100%;
+    border: none;
+}
+
+.contact_us__button {
+    width: 90%;
+    height: 3rem;
+    font-size: 2rem;
+    border: 2px solid teal;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.checkbox_container {
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.policy {
+    font-size: 0.75rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+input {
+    margin: 0.2rem;
+}
+.interval_ad_container {
+    input {
+        font-size: 1rem;
+    }
+    .red::placeholder {
+        color: red;
+    }
+}
+
+::placeholder {
+    color: red;
+}
