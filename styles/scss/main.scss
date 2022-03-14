@@ -56,12 +56,12 @@ main {
     }
 }
 
-.why-us__2 {
+.why-us__par-2 {
     font-weight: bold;
     width: 100%;
 }
 
-.why-us__3 {
+.why-us__par-3 {
     color: blue;
     width: 100%;
 }
@@ -93,7 +93,7 @@ main {
     }
 }
 
-.rest-of-market__2 {
+.rest-of-market__par-2 {
     padding-right: 1rem;
 }
 
@@ -307,6 +307,7 @@ main {
     margin-top: 10px;
     padding: 4rem 1rem 4rem 1rem;
     @media (min-width: 925px) {
+        justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;
         column-gap: 2rem;
@@ -349,26 +350,24 @@ main {
     border-left: none;
     border-right: none;
     color: #007cba;
+    .faq__question__text {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        padding: 5px;
+        color: #007cba;
+    }
     @media (min-width: 925px) {
         // width: 90%;
         // min-height: 115px;
         // padding: 15px 0;
         // justify-content: center;
         width: 450px;
-        // flex-grow: 0;
-        // flex-shrink: 0;
         margin: 0 17px;
         justify-content: center;
         border-bottom: none;
-        .faq__question__text {
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 10px 0;
-            padding: 5px;
-            color: #007cba;
-        }
     }
 }
 

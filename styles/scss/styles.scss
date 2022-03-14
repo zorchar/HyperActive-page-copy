@@ -166,6 +166,15 @@ ol {
     }
 }
 
+.form-sent__backdrop {
+    display: flex;
+    .form-sent__modal {
+        display: flex;
+        position: relative;
+        overflow: auto;
+    }
+}
+
 .interested {
     width: 60%;
     z-index: 2;

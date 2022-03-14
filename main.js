@@ -102,12 +102,18 @@ interval_form.addEventListener('submit', (event) => {
         const formSentBackdrops = document.querySelectorAll(".form-sent__backdrop")
         formSentBackdrops.forEach(element => {
             element.classList.toggle('hidden')
+            const intervalBackdrops = document.querySelectorAll(".interval__backdrop")
+            intervalBackdrops.forEach(element => {
+                element.classList.add('hidden')
+
+            })
+
         });
     }
 })
 
 
-const intervalBackdrops = document.querySelectorAll(".interval_ad__backdrop")
+const intervalBackdrops = document.querySelectorAll(".interval__backdrop")
 const xLines = document.querySelector(".x_lines")
 xLines.addEventListener('click', (event) => {
     intervalBackdrops.forEach(element => {
@@ -148,3 +154,13 @@ toggleButton.addEventListener('click', (event) => {
 })
 
 
+
+formSentClosingButton = document.querySelector(".fa-times")
+formSentClosingButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    event.stopPropagation()
+    const formSentBackdrops = document.querySelectorAll(".form-sent__backdrop")
+    formSentBackdrops.forEach(element => {
+        element.classList.add('hidden')
+    })
+})
