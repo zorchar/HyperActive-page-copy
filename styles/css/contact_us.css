@@ -129,3 +129,43 @@ input {
 ::placeholder {
   color: red;
 }
+
+.form-sent__modal {
+  background: #fffffe;
+  padding: 1rem 3rem;
+}
+.form-sent__modal .fa-times {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.form-sent__modal.interval_ad_container {
+  width: 600px;
+  height: 400px;
+}
+@media (max-width: 925px) {
+  .form-sent__modal.interval_ad_container {
+    justify-content: flex-start;
+  }
+}
+.form-sent__modal h1 {
+  font-size: 4rem;
+}
+.form-sent__modal h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+@media (max-width: 925px) {
+  .form-sent__modal h2 {
+    font-size: 1.5rem;
+  }
+}
+.form-sent__modal .fa-check-circle {
+  width: 100%;
+  font-size: 5rem;
+  color: #008001;
+  text-align: left;
+  line-height: 1.5;
+}

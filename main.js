@@ -13,18 +13,28 @@ contactUsForm.addEventListener('submit', (event) => {
     let fullName = event.target[0].value
     let phoneNumber = event.target[1].value
     let email = event.target[2].value
+    let isValid = true
 
     if (fullName === "") {
         event.target[0].value = ""
         event.target[0].placeholder = "*נא להזין שם מלא"
+        isValid = false
     }
     if (phoneNumber.length !== 10 || !phoneNumber.includes('0')) {
         event.target[1].value = ""
         event.target[1].placeholder = "*נא להזין טלפון"
+        isValid = false
     }
     if (!email.includes('@') || !email.includes('.')) {
         event.target[2].value = ""
         event.target[2].placeholder = "*נא להזין כתובת מייל"
+        isValid = false
+    }
+    if (isValid) {
+        const formSentBackdrops = document.querySelectorAll(".form-sent__backdrop")
+        formSentBackdrops.forEach(element => {
+            element.classList.toggle('hidden')
+        });
     }
 })
 
@@ -35,18 +45,28 @@ hearMoreForm.addEventListener('submit', (event) => {
     let fullName = event.target[0].value
     let phoneNumber = event.target[1].value
     let email = event.target[2].value
+    let isValid = true
 
     if (fullName === "") {
         event.target[0].value = ""
         event.target[0].placeholder = "*נא להזין שם מלא"
+        isValid = false
     }
     if (phoneNumber.length !== 10 || !phoneNumber.includes('0')) {
         event.target[1].value = ""
         event.target[1].placeholder = "*נא להזין טלפון"
+        isValid = false
     }
     if (!email.includes('@') || !email.includes('.')) {
         event.target[2].value = ""
         event.target[2].placeholder = "*נא להזין כתובת מייל"
+        isValid = false
+    }
+    if (isValid) {
+        const formSentBackdrops = document.querySelectorAll(".form-sent__backdrop")
+        formSentBackdrops.forEach(element => {
+            element.classList.toggle('hidden')
+        });
     }
 })
 
@@ -61,18 +81,28 @@ interval_form.addEventListener('submit', (event) => {
     let fullName = event.target[0].value
     let phoneNumber = event.target[1].value
     let email = event.target[2].value
+    let isValid = true
 
     if (fullName === "") {
         event.target[0].value = ""
         event.target[0].placeholder = "*נא להזין שם מלא"
+        isValid = false
     }
     if (phoneNumber.length !== 10 || !phoneNumber.includes('0')) {
         event.target[1].value = ""
         event.target[1].placeholder = "*נא להזין טלפון"
+        isValid = false
     }
     if (!email.includes('@') || !email.includes('.')) {
         event.target[2].value = ""
         event.target[2].placeholder = "*נא להזין כתובת מייל"
+        isValid = false
+    }
+    if (isValid) {
+        const formSentBackdrops = document.querySelectorAll(".form-sent__backdrop")
+        formSentBackdrops.forEach(element => {
+            element.classList.toggle('hidden')
+        });
     }
 })
 
