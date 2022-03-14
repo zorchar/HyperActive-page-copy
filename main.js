@@ -1,4 +1,4 @@
-const GrandfathersOfPlusSigns = document.querySelectorAll(".grandfather__plus_sign")
+const GrandfathersOfPlusSigns = document.querySelectorAll(".grandfather__plus-sign")
 GrandfathersOfPlusSigns.forEach(element => {
     element.addEventListener('click', (event) => {
         element.children[1].classList.toggle('height_fit-content')
